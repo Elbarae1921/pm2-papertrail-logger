@@ -1,0 +1,26 @@
+{
+    "name": "pm2-papertrail-logger",
+    "version": "1.0.0",
+    "description": "PM2 Papertrail Logger Module",
+    "main": "app.js",
+    "dependencies": {
+      "pm2": "^5.1.2",
+      "pmx": "beta",
+      "winston": "^3.5.1",
+      "winston-papertrail": "^1.0.5"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Elbarae1921/pm2-papertrail-logger"
+    },
+    "apps": [
+      {
+        "merge_logs": true,
+        "max_memory_restart": "200M",
+        "script": "app.js"
+      }
+    ],
+    "author": "Elbarae Rguig",
+    "license": "MIT"
+  }
+  
